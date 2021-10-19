@@ -1,0 +1,40 @@
+{
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "79"],
+  "python.linting.pydocstyleEnabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.linting.mypyArgs": [
+    "--ignore-missing-imports",
+    "--follow-imports=normal",
+    "--show-column-numbers",
+    "--namespace-packages"
+  ],
+  "python.linting.banditEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Path": "pyflakes",
+  "python.linting.pycodestylePath": "pycodestyle",
+  "python.formatting.blackPath": "black",
+  "python.linting.pylintPath": "./venv/bin/pylint",
+  "python.pythonPath": "./venv/bin/python",
+  "python.autoComplete.extraPaths": [
+    "./src/"
+  ],
+  "python.analysis.extraPaths": [
+    "./src/",
+  ],
+  "python.linting.enabled": true,
+  "editor.renderWhitespace": "all",
+  "autoDocstring.customTemplatePath": ".pydocstyle.mustache",
+}

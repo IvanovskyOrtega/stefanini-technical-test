@@ -1,0 +1,16 @@
+# Python's virtual environment
+venv/
+
+# VSCode settings
+.vscode/
+
+# Config files
+.editorconfig
+.pydocstyle.mustache
+.pylintrc
+
+# Makefile
+Makefile
+
+# Readme
+README.md

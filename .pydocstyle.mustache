@@ -1,0 +1,50 @@
+{{name}}.
+
+{{summaryPlaceholder}}.
+
+{{#argsExist}}
+Arguments
+----------
+{{#args}}
+{{var}} : {{typePlaceholder}}
+    {{descriptionPlaceholder}}.
+{{/args}}
+{{/argsExist}}
+
+{{#kwargsExist}}
+Keyword Arguments
+-----------------
+{{#kwargs}}
+{{var}} : {{typePlaceholder}} (defaults to: {{&default}})
+    {{descriptionPlaceholder}}.
+{{/kwargs}}
+{{/kwargsExist}}
+
+{{#exceptionsExist}}
+Exceptions
+----------
+{{#exceptions}}
+{{type}} : {{descriptionPlaceholder}}.
+{{/exceptions}}
+{{/exceptionsExist}}
+
+{{#yieldsExist}}
+Yields
+------
+{{#yields}}
+{{typePlaceholder}} : {{descriptionPlaceholder}}.
+{{/yields}}
+{{/yieldsExist}}
+
+{{#returnsExist}}
+Returns
+-------
+{{#returns}}
+{{typePlaceholder}} : {{descriptionPlaceholder}}.
+{{/returns}}
+{{/returnsExist}}
+
+Examples
+--------
+>>> {{name}}({{#args}}{{var}},{{/args}}{{#kwargs}}{{var}}={{&default}}{{/kwargs}})
+#sampleResult
